@@ -18,45 +18,51 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$AuthFailure {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() internetError,
-    required TResult Function() emailAlreadyExists,
-    required TResult Function() passwordTooWeak,
+    required TResult Function() emailAlreadyInUsed,
+    required TResult Function() userNotFound,
+    required TResult Function() wrongPassword,
+    required TResult Function(Option<String> errorMessage) unknownError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? internetError,
-    TResult Function()? emailAlreadyExists,
-    TResult Function()? passwordTooWeak,
+    TResult Function()? emailAlreadyInUsed,
+    TResult Function()? userNotFound,
+    TResult Function()? wrongPassword,
+    TResult Function(Option<String> errorMessage)? unknownError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? internetError,
-    TResult Function()? emailAlreadyExists,
-    TResult Function()? passwordTooWeak,
+    TResult Function()? emailAlreadyInUsed,
+    TResult Function()? userNotFound,
+    TResult Function()? wrongPassword,
+    TResult Function(Option<String> errorMessage)? unknownError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InternetError value) internetError,
-    required TResult Function(_EmailAlreadyExists value) emailAlreadyExists,
-    required TResult Function(_PasswordTooWeak value) passwordTooWeak,
+    required TResult Function(_EmailAlreadyInUsed value) emailAlreadyInUsed,
+    required TResult Function(_UserNotFound value) userNotFound,
+    required TResult Function(_WrongPassword value) wrongPassword,
+    required TResult Function(_UnknownError value) unknownError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternetError value)? internetError,
-    TResult Function(_EmailAlreadyExists value)? emailAlreadyExists,
-    TResult Function(_PasswordTooWeak value)? passwordTooWeak,
+    TResult Function(_EmailAlreadyInUsed value)? emailAlreadyInUsed,
+    TResult Function(_UserNotFound value)? userNotFound,
+    TResult Function(_WrongPassword value)? wrongPassword,
+    TResult Function(_UnknownError value)? unknownError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InternetError value)? internetError,
-    TResult Function(_EmailAlreadyExists value)? emailAlreadyExists,
-    TResult Function(_PasswordTooWeak value)? passwordTooWeak,
+    TResult Function(_EmailAlreadyInUsed value)? emailAlreadyInUsed,
+    TResult Function(_UserNotFound value)? userNotFound,
+    TResult Function(_WrongPassword value)? wrongPassword,
+    TResult Function(_UnknownError value)? unknownError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -79,38 +85,38 @@ class _$AuthFailureCopyWithImpl<$Res> implements $AuthFailureCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$$_InternetErrorCopyWith<$Res> {
-  factory _$$_InternetErrorCopyWith(
-          _$_InternetError value, $Res Function(_$_InternetError) then) =
-      __$$_InternetErrorCopyWithImpl<$Res>;
+abstract class _$$_EmailAlreadyInUsedCopyWith<$Res> {
+  factory _$$_EmailAlreadyInUsedCopyWith(_$_EmailAlreadyInUsed value,
+          $Res Function(_$_EmailAlreadyInUsed) then) =
+      __$$_EmailAlreadyInUsedCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_InternetErrorCopyWithImpl<$Res>
+class __$$_EmailAlreadyInUsedCopyWithImpl<$Res>
     extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$$_InternetErrorCopyWith<$Res> {
-  __$$_InternetErrorCopyWithImpl(
-      _$_InternetError _value, $Res Function(_$_InternetError) _then)
-      : super(_value, (v) => _then(v as _$_InternetError));
+    implements _$$_EmailAlreadyInUsedCopyWith<$Res> {
+  __$$_EmailAlreadyInUsedCopyWithImpl(
+      _$_EmailAlreadyInUsed _value, $Res Function(_$_EmailAlreadyInUsed) _then)
+      : super(_value, (v) => _then(v as _$_EmailAlreadyInUsed));
 
   @override
-  _$_InternetError get _value => super._value as _$_InternetError;
+  _$_EmailAlreadyInUsed get _value => super._value as _$_EmailAlreadyInUsed;
 }
 
 /// @nodoc
 
-class _$_InternetError implements _InternetError {
-  _$_InternetError();
+class _$_EmailAlreadyInUsed implements _EmailAlreadyInUsed {
+  const _$_EmailAlreadyInUsed();
 
   @override
   String toString() {
-    return 'AuthFailure.internetError()';
+    return 'AuthFailure.emailAlreadyInUsed()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_InternetError);
+        (other.runtimeType == runtimeType && other is _$_EmailAlreadyInUsed);
   }
 
   @override
@@ -119,33 +125,36 @@ class _$_InternetError implements _InternetError {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() internetError,
-    required TResult Function() emailAlreadyExists,
-    required TResult Function() passwordTooWeak,
+    required TResult Function() emailAlreadyInUsed,
+    required TResult Function() userNotFound,
+    required TResult Function() wrongPassword,
+    required TResult Function(Option<String> errorMessage) unknownError,
   }) {
-    return internetError();
+    return emailAlreadyInUsed();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? internetError,
-    TResult Function()? emailAlreadyExists,
-    TResult Function()? passwordTooWeak,
+    TResult Function()? emailAlreadyInUsed,
+    TResult Function()? userNotFound,
+    TResult Function()? wrongPassword,
+    TResult Function(Option<String> errorMessage)? unknownError,
   }) {
-    return internetError?.call();
+    return emailAlreadyInUsed?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? internetError,
-    TResult Function()? emailAlreadyExists,
-    TResult Function()? passwordTooWeak,
+    TResult Function()? emailAlreadyInUsed,
+    TResult Function()? userNotFound,
+    TResult Function()? wrongPassword,
+    TResult Function(Option<String> errorMessage)? unknownError,
     required TResult orElse(),
   }) {
-    if (internetError != null) {
-      return internetError();
+    if (emailAlreadyInUsed != null) {
+      return emailAlreadyInUsed();
     }
     return orElse();
   }
@@ -153,75 +162,78 @@ class _$_InternetError implements _InternetError {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InternetError value) internetError,
-    required TResult Function(_EmailAlreadyExists value) emailAlreadyExists,
-    required TResult Function(_PasswordTooWeak value) passwordTooWeak,
+    required TResult Function(_EmailAlreadyInUsed value) emailAlreadyInUsed,
+    required TResult Function(_UserNotFound value) userNotFound,
+    required TResult Function(_WrongPassword value) wrongPassword,
+    required TResult Function(_UnknownError value) unknownError,
   }) {
-    return internetError(this);
+    return emailAlreadyInUsed(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternetError value)? internetError,
-    TResult Function(_EmailAlreadyExists value)? emailAlreadyExists,
-    TResult Function(_PasswordTooWeak value)? passwordTooWeak,
+    TResult Function(_EmailAlreadyInUsed value)? emailAlreadyInUsed,
+    TResult Function(_UserNotFound value)? userNotFound,
+    TResult Function(_WrongPassword value)? wrongPassword,
+    TResult Function(_UnknownError value)? unknownError,
   }) {
-    return internetError?.call(this);
+    return emailAlreadyInUsed?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InternetError value)? internetError,
-    TResult Function(_EmailAlreadyExists value)? emailAlreadyExists,
-    TResult Function(_PasswordTooWeak value)? passwordTooWeak,
+    TResult Function(_EmailAlreadyInUsed value)? emailAlreadyInUsed,
+    TResult Function(_UserNotFound value)? userNotFound,
+    TResult Function(_WrongPassword value)? wrongPassword,
+    TResult Function(_UnknownError value)? unknownError,
     required TResult orElse(),
   }) {
-    if (internetError != null) {
-      return internetError(this);
+    if (emailAlreadyInUsed != null) {
+      return emailAlreadyInUsed(this);
     }
     return orElse();
   }
 }
 
-abstract class _InternetError implements AuthFailure {
-  factory _InternetError() = _$_InternetError;
+abstract class _EmailAlreadyInUsed implements AuthFailure {
+  const factory _EmailAlreadyInUsed() = _$_EmailAlreadyInUsed;
 }
 
 /// @nodoc
-abstract class _$$_EmailAlreadyExistsCopyWith<$Res> {
-  factory _$$_EmailAlreadyExistsCopyWith(_$_EmailAlreadyExists value,
-          $Res Function(_$_EmailAlreadyExists) then) =
-      __$$_EmailAlreadyExistsCopyWithImpl<$Res>;
+abstract class _$$_UserNotFoundCopyWith<$Res> {
+  factory _$$_UserNotFoundCopyWith(
+          _$_UserNotFound value, $Res Function(_$_UserNotFound) then) =
+      __$$_UserNotFoundCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_EmailAlreadyExistsCopyWithImpl<$Res>
+class __$$_UserNotFoundCopyWithImpl<$Res>
     extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$$_EmailAlreadyExistsCopyWith<$Res> {
-  __$$_EmailAlreadyExistsCopyWithImpl(
-      _$_EmailAlreadyExists _value, $Res Function(_$_EmailAlreadyExists) _then)
-      : super(_value, (v) => _then(v as _$_EmailAlreadyExists));
+    implements _$$_UserNotFoundCopyWith<$Res> {
+  __$$_UserNotFoundCopyWithImpl(
+      _$_UserNotFound _value, $Res Function(_$_UserNotFound) _then)
+      : super(_value, (v) => _then(v as _$_UserNotFound));
 
   @override
-  _$_EmailAlreadyExists get _value => super._value as _$_EmailAlreadyExists;
+  _$_UserNotFound get _value => super._value as _$_UserNotFound;
 }
 
 /// @nodoc
 
-class _$_EmailAlreadyExists implements _EmailAlreadyExists {
-  _$_EmailAlreadyExists();
+class _$_UserNotFound implements _UserNotFound {
+  const _$_UserNotFound();
 
   @override
   String toString() {
-    return 'AuthFailure.emailAlreadyExists()';
+    return 'AuthFailure.userNotFound()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_EmailAlreadyExists);
+        (other.runtimeType == runtimeType && other is _$_UserNotFound);
   }
 
   @override
@@ -230,33 +242,36 @@ class _$_EmailAlreadyExists implements _EmailAlreadyExists {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() internetError,
-    required TResult Function() emailAlreadyExists,
-    required TResult Function() passwordTooWeak,
+    required TResult Function() emailAlreadyInUsed,
+    required TResult Function() userNotFound,
+    required TResult Function() wrongPassword,
+    required TResult Function(Option<String> errorMessage) unknownError,
   }) {
-    return emailAlreadyExists();
+    return userNotFound();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? internetError,
-    TResult Function()? emailAlreadyExists,
-    TResult Function()? passwordTooWeak,
+    TResult Function()? emailAlreadyInUsed,
+    TResult Function()? userNotFound,
+    TResult Function()? wrongPassword,
+    TResult Function(Option<String> errorMessage)? unknownError,
   }) {
-    return emailAlreadyExists?.call();
+    return userNotFound?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? internetError,
-    TResult Function()? emailAlreadyExists,
-    TResult Function()? passwordTooWeak,
+    TResult Function()? emailAlreadyInUsed,
+    TResult Function()? userNotFound,
+    TResult Function()? wrongPassword,
+    TResult Function(Option<String> errorMessage)? unknownError,
     required TResult orElse(),
   }) {
-    if (emailAlreadyExists != null) {
-      return emailAlreadyExists();
+    if (userNotFound != null) {
+      return userNotFound();
     }
     return orElse();
   }
@@ -264,75 +279,78 @@ class _$_EmailAlreadyExists implements _EmailAlreadyExists {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InternetError value) internetError,
-    required TResult Function(_EmailAlreadyExists value) emailAlreadyExists,
-    required TResult Function(_PasswordTooWeak value) passwordTooWeak,
+    required TResult Function(_EmailAlreadyInUsed value) emailAlreadyInUsed,
+    required TResult Function(_UserNotFound value) userNotFound,
+    required TResult Function(_WrongPassword value) wrongPassword,
+    required TResult Function(_UnknownError value) unknownError,
   }) {
-    return emailAlreadyExists(this);
+    return userNotFound(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternetError value)? internetError,
-    TResult Function(_EmailAlreadyExists value)? emailAlreadyExists,
-    TResult Function(_PasswordTooWeak value)? passwordTooWeak,
+    TResult Function(_EmailAlreadyInUsed value)? emailAlreadyInUsed,
+    TResult Function(_UserNotFound value)? userNotFound,
+    TResult Function(_WrongPassword value)? wrongPassword,
+    TResult Function(_UnknownError value)? unknownError,
   }) {
-    return emailAlreadyExists?.call(this);
+    return userNotFound?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InternetError value)? internetError,
-    TResult Function(_EmailAlreadyExists value)? emailAlreadyExists,
-    TResult Function(_PasswordTooWeak value)? passwordTooWeak,
+    TResult Function(_EmailAlreadyInUsed value)? emailAlreadyInUsed,
+    TResult Function(_UserNotFound value)? userNotFound,
+    TResult Function(_WrongPassword value)? wrongPassword,
+    TResult Function(_UnknownError value)? unknownError,
     required TResult orElse(),
   }) {
-    if (emailAlreadyExists != null) {
-      return emailAlreadyExists(this);
+    if (userNotFound != null) {
+      return userNotFound(this);
     }
     return orElse();
   }
 }
 
-abstract class _EmailAlreadyExists implements AuthFailure {
-  factory _EmailAlreadyExists() = _$_EmailAlreadyExists;
+abstract class _UserNotFound implements AuthFailure {
+  const factory _UserNotFound() = _$_UserNotFound;
 }
 
 /// @nodoc
-abstract class _$$_PasswordTooWeakCopyWith<$Res> {
-  factory _$$_PasswordTooWeakCopyWith(
-          _$_PasswordTooWeak value, $Res Function(_$_PasswordTooWeak) then) =
-      __$$_PasswordTooWeakCopyWithImpl<$Res>;
+abstract class _$$_WrongPasswordCopyWith<$Res> {
+  factory _$$_WrongPasswordCopyWith(
+          _$_WrongPassword value, $Res Function(_$_WrongPassword) then) =
+      __$$_WrongPasswordCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$_PasswordTooWeakCopyWithImpl<$Res>
+class __$$_WrongPasswordCopyWithImpl<$Res>
     extends _$AuthFailureCopyWithImpl<$Res>
-    implements _$$_PasswordTooWeakCopyWith<$Res> {
-  __$$_PasswordTooWeakCopyWithImpl(
-      _$_PasswordTooWeak _value, $Res Function(_$_PasswordTooWeak) _then)
-      : super(_value, (v) => _then(v as _$_PasswordTooWeak));
+    implements _$$_WrongPasswordCopyWith<$Res> {
+  __$$_WrongPasswordCopyWithImpl(
+      _$_WrongPassword _value, $Res Function(_$_WrongPassword) _then)
+      : super(_value, (v) => _then(v as _$_WrongPassword));
 
   @override
-  _$_PasswordTooWeak get _value => super._value as _$_PasswordTooWeak;
+  _$_WrongPassword get _value => super._value as _$_WrongPassword;
 }
 
 /// @nodoc
 
-class _$_PasswordTooWeak implements _PasswordTooWeak {
-  _$_PasswordTooWeak();
+class _$_WrongPassword implements _WrongPassword {
+  const _$_WrongPassword();
 
   @override
   String toString() {
-    return 'AuthFailure.passwordTooWeak()';
+    return 'AuthFailure.wrongPassword()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$_PasswordTooWeak);
+        (other.runtimeType == runtimeType && other is _$_WrongPassword);
   }
 
   @override
@@ -341,33 +359,36 @@ class _$_PasswordTooWeak implements _PasswordTooWeak {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function() internetError,
-    required TResult Function() emailAlreadyExists,
-    required TResult Function() passwordTooWeak,
+    required TResult Function() emailAlreadyInUsed,
+    required TResult Function() userNotFound,
+    required TResult Function() wrongPassword,
+    required TResult Function(Option<String> errorMessage) unknownError,
   }) {
-    return passwordTooWeak();
+    return wrongPassword();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function()? internetError,
-    TResult Function()? emailAlreadyExists,
-    TResult Function()? passwordTooWeak,
+    TResult Function()? emailAlreadyInUsed,
+    TResult Function()? userNotFound,
+    TResult Function()? wrongPassword,
+    TResult Function(Option<String> errorMessage)? unknownError,
   }) {
-    return passwordTooWeak?.call();
+    return wrongPassword?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? internetError,
-    TResult Function()? emailAlreadyExists,
-    TResult Function()? passwordTooWeak,
+    TResult Function()? emailAlreadyInUsed,
+    TResult Function()? userNotFound,
+    TResult Function()? wrongPassword,
+    TResult Function(Option<String> errorMessage)? unknownError,
     required TResult orElse(),
   }) {
-    if (passwordTooWeak != null) {
-      return passwordTooWeak();
+    if (wrongPassword != null) {
+      return wrongPassword();
     }
     return orElse();
   }
@@ -375,38 +396,189 @@ class _$_PasswordTooWeak implements _PasswordTooWeak {
   @override
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
-    required TResult Function(_InternetError value) internetError,
-    required TResult Function(_EmailAlreadyExists value) emailAlreadyExists,
-    required TResult Function(_PasswordTooWeak value) passwordTooWeak,
+    required TResult Function(_EmailAlreadyInUsed value) emailAlreadyInUsed,
+    required TResult Function(_UserNotFound value) userNotFound,
+    required TResult Function(_WrongPassword value) wrongPassword,
+    required TResult Function(_UnknownError value) unknownError,
   }) {
-    return passwordTooWeak(this);
+    return wrongPassword(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
-    TResult Function(_InternetError value)? internetError,
-    TResult Function(_EmailAlreadyExists value)? emailAlreadyExists,
-    TResult Function(_PasswordTooWeak value)? passwordTooWeak,
+    TResult Function(_EmailAlreadyInUsed value)? emailAlreadyInUsed,
+    TResult Function(_UserNotFound value)? userNotFound,
+    TResult Function(_WrongPassword value)? wrongPassword,
+    TResult Function(_UnknownError value)? unknownError,
   }) {
-    return passwordTooWeak?.call(this);
+    return wrongPassword?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
-    TResult Function(_InternetError value)? internetError,
-    TResult Function(_EmailAlreadyExists value)? emailAlreadyExists,
-    TResult Function(_PasswordTooWeak value)? passwordTooWeak,
+    TResult Function(_EmailAlreadyInUsed value)? emailAlreadyInUsed,
+    TResult Function(_UserNotFound value)? userNotFound,
+    TResult Function(_WrongPassword value)? wrongPassword,
+    TResult Function(_UnknownError value)? unknownError,
     required TResult orElse(),
   }) {
-    if (passwordTooWeak != null) {
-      return passwordTooWeak(this);
+    if (wrongPassword != null) {
+      return wrongPassword(this);
     }
     return orElse();
   }
 }
 
-abstract class _PasswordTooWeak implements AuthFailure {
-  factory _PasswordTooWeak() = _$_PasswordTooWeak;
+abstract class _WrongPassword implements AuthFailure {
+  const factory _WrongPassword() = _$_WrongPassword;
+}
+
+/// @nodoc
+abstract class _$$_UnknownErrorCopyWith<$Res> {
+  factory _$$_UnknownErrorCopyWith(
+          _$_UnknownError value, $Res Function(_$_UnknownError) then) =
+      __$$_UnknownErrorCopyWithImpl<$Res>;
+  $Res call({Option<String> errorMessage});
+}
+
+/// @nodoc
+class __$$_UnknownErrorCopyWithImpl<$Res>
+    extends _$AuthFailureCopyWithImpl<$Res>
+    implements _$$_UnknownErrorCopyWith<$Res> {
+  __$$_UnknownErrorCopyWithImpl(
+      _$_UnknownError _value, $Res Function(_$_UnknownError) _then)
+      : super(_value, (v) => _then(v as _$_UnknownError));
+
+  @override
+  _$_UnknownError get _value => super._value as _$_UnknownError;
+
+  @override
+  $Res call({
+    Object? errorMessage = freezed,
+  }) {
+    return _then(_$_UnknownError(
+      errorMessage == freezed
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as Option<String>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_UnknownError implements _UnknownError {
+  const _$_UnknownError(this.errorMessage);
+
+  @override
+  final Option<String> errorMessage;
+
+  @override
+  String toString() {
+    return 'AuthFailure.unknownError(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_UnknownError &&
+            const DeepCollectionEquality()
+                .equals(other.errorMessage, errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(errorMessage));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_UnknownErrorCopyWith<_$_UnknownError> get copyWith =>
+      __$$_UnknownErrorCopyWithImpl<_$_UnknownError>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() emailAlreadyInUsed,
+    required TResult Function() userNotFound,
+    required TResult Function() wrongPassword,
+    required TResult Function(Option<String> errorMessage) unknownError,
+  }) {
+    return unknownError(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function()? emailAlreadyInUsed,
+    TResult Function()? userNotFound,
+    TResult Function()? wrongPassword,
+    TResult Function(Option<String> errorMessage)? unknownError,
+  }) {
+    return unknownError?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? emailAlreadyInUsed,
+    TResult Function()? userNotFound,
+    TResult Function()? wrongPassword,
+    TResult Function(Option<String> errorMessage)? unknownError,
+    required TResult orElse(),
+  }) {
+    if (unknownError != null) {
+      return unknownError(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_EmailAlreadyInUsed value) emailAlreadyInUsed,
+    required TResult Function(_UserNotFound value) userNotFound,
+    required TResult Function(_WrongPassword value) wrongPassword,
+    required TResult Function(_UnknownError value) unknownError,
+  }) {
+    return unknownError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_EmailAlreadyInUsed value)? emailAlreadyInUsed,
+    TResult Function(_UserNotFound value)? userNotFound,
+    TResult Function(_WrongPassword value)? wrongPassword,
+    TResult Function(_UnknownError value)? unknownError,
+  }) {
+    return unknownError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_EmailAlreadyInUsed value)? emailAlreadyInUsed,
+    TResult Function(_UserNotFound value)? userNotFound,
+    TResult Function(_WrongPassword value)? wrongPassword,
+    TResult Function(_UnknownError value)? unknownError,
+    required TResult orElse(),
+  }) {
+    if (unknownError != null) {
+      return unknownError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _UnknownError implements AuthFailure {
+  const factory _UnknownError(final Option<String> errorMessage) =
+      _$_UnknownError;
+
+  Option<String> get errorMessage;
+  @JsonKey(ignore: true)
+  _$$_UnknownErrorCopyWith<_$_UnknownError> get copyWith =>
+      throw _privateConstructorUsedError;
 }

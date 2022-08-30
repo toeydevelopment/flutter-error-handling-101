@@ -27,7 +27,9 @@ class AuthFacade implements IAuthFacade {
     required String email,
     required String password,
   }) {
-    // TODO: implement signUpWithEmailAndPassword
-    throw UnimplementedError();
+    return authRepository.signUpWithEmailAndPassword(
+      email: email,
+      password: password,
+    );
   }
 }

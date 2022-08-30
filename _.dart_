@@ -1,0 +1,395 @@
+T _$identity<T>(T value) => value;
+
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
+/// @nodoc
+mixin _$Student {
+  String get indexNumber => throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String indexNumber, int graduationYear)
+        graduateStudent,
+    required TResult Function(String indexNumber, int currentGrade)
+        underGraduateStudent,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(String indexNumber, int graduationYear)? graduateStudent,
+    TResult Function(String indexNumber, int currentGrade)?
+        underGraduateStudent,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String indexNumber, int graduationYear)? graduateStudent,
+    TResult Function(String indexNumber, int currentGrade)?
+        underGraduateStudent,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GraduateStudent value) graduateStudent,
+    required TResult Function(_UnderGraduateStudent value) underGraduateStudent,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_GraduateStudent value)? graduateStudent,
+    TResult Function(_UnderGraduateStudent value)? underGraduateStudent,
+  }) =>
+      throw _privateConstructorUsedError;
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GraduateStudent value)? graduateStudent,
+    TResult Function(_UnderGraduateStudent value)? underGraduateStudent,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
+
+  @JsonKey(ignore: true)
+  $StudentCopyWith<Student> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $StudentCopyWith<$Res> {
+  factory $StudentCopyWith(Student value, $Res Function(Student) then) =
+      _$StudentCopyWithImpl<$Res>;
+  $Res call({String indexNumber});
+}
+
+/// @nodoc
+class _$StudentCopyWithImpl<$Res> implements $StudentCopyWith<$Res> {
+  _$StudentCopyWithImpl(this._value, this._then);
+
+  final Student _value;
+  // ignore: unused_field
+  final $Res Function(Student) _then;
+
+  @override
+  $Res call({
+    Object? indexNumber = freezed,
+  }) {
+    return _then(_value.copyWith(
+      indexNumber: indexNumber == freezed
+          ? _value.indexNumber
+          : indexNumber // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$$_GraduateStudentCopyWith<$Res>
+    implements $StudentCopyWith<$Res> {
+  factory _$$_GraduateStudentCopyWith(
+          _$_GraduateStudent value, $Res Function(_$_GraduateStudent) then) =
+      __$$_GraduateStudentCopyWithImpl<$Res>;
+  @override
+  $Res call({String indexNumber, int graduationYear});
+}
+
+/// @nodoc
+class __$$_GraduateStudentCopyWithImpl<$Res> extends _$StudentCopyWithImpl<$Res>
+    implements _$$_GraduateStudentCopyWith<$Res> {
+  __$$_GraduateStudentCopyWithImpl(
+      _$_GraduateStudent _value, $Res Function(_$_GraduateStudent) _then)
+      : super(_value, (v) => _then(v as _$_GraduateStudent));
+
+  @override
+  _$_GraduateStudent get _value => super._value as _$_GraduateStudent;
+
+  @override
+  $Res call({
+    Object? indexNumber = freezed,
+    Object? graduationYear = freezed,
+  }) {
+    return _then(_$_GraduateStudent(
+      indexNumber == freezed
+          ? _value.indexNumber
+          : indexNumber // ignore: cast_nullable_to_non_nullable
+              as String,
+      graduationYear == freezed
+          ? _value.graduationYear
+          : graduationYear // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_GraduateStudent implements _GraduateStudent {
+  _$_GraduateStudent(this.indexNumber, this.graduationYear);
+
+  @override
+  final String indexNumber;
+  @override
+  final int graduationYear;
+
+  @override
+  String toString() {
+    return 'Student.graduateStudent(indexNumber: $indexNumber, graduationYear: $graduationYear)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_GraduateStudent &&
+            const DeepCollectionEquality()
+                .equals(other.indexNumber, indexNumber) &&
+            const DeepCollectionEquality()
+                .equals(other.graduationYear, graduationYear));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(indexNumber),
+      const DeepCollectionEquality().hash(graduationYear));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_GraduateStudentCopyWith<_$_GraduateStudent> get copyWith =>
+      __$$_GraduateStudentCopyWithImpl<_$_GraduateStudent>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String indexNumber, int graduationYear)
+        graduateStudent,
+    required TResult Function(String indexNumber, int currentGrade)
+        underGraduateStudent,
+  }) {
+    return graduateStudent(indexNumber, graduationYear);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(String indexNumber, int graduationYear)? graduateStudent,
+    TResult Function(String indexNumber, int currentGrade)?
+        underGraduateStudent,
+  }) {
+    return graduateStudent?.call(indexNumber, graduationYear);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String indexNumber, int graduationYear)? graduateStudent,
+    TResult Function(String indexNumber, int currentGrade)?
+        underGraduateStudent,
+    required TResult orElse(),
+  }) {
+    if (graduateStudent != null) {
+      return graduateStudent(indexNumber, graduationYear);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GraduateStudent value) graduateStudent,
+    required TResult Function(_UnderGraduateStudent value) underGraduateStudent,
+  }) {
+    return graduateStudent(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_GraduateStudent value)? graduateStudent,
+    TResult Function(_UnderGraduateStudent value)? underGraduateStudent,
+  }) {
+    return graduateStudent?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GraduateStudent value)? graduateStudent,
+    TResult Function(_UnderGraduateStudent value)? underGraduateStudent,
+    required TResult orElse(),
+  }) {
+    if (graduateStudent != null) {
+      return graduateStudent(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GraduateStudent implements Student {
+  factory _GraduateStudent(final String indexNumber, final int graduationYear) =
+      _$_GraduateStudent;
+
+  @override
+  String get indexNumber;
+  int get graduationYear;
+  @override
+  @JsonKey(ignore: true)
+  _$$_GraduateStudentCopyWith<_$_GraduateStudent> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_UnderGraduateStudentCopyWith<$Res>
+    implements $StudentCopyWith<$Res> {
+  factory _$$_UnderGraduateStudentCopyWith(_$_UnderGraduateStudent value,
+          $Res Function(_$_UnderGraduateStudent) then) =
+      __$$_UnderGraduateStudentCopyWithImpl<$Res>;
+  @override
+  $Res call({String indexNumber, int currentGrade});
+}
+
+/// @nodoc
+class __$$_UnderGraduateStudentCopyWithImpl<$Res>
+    extends _$StudentCopyWithImpl<$Res>
+    implements _$$_UnderGraduateStudentCopyWith<$Res> {
+  __$$_UnderGraduateStudentCopyWithImpl(_$_UnderGraduateStudent _value,
+      $Res Function(_$_UnderGraduateStudent) _then)
+      : super(_value, (v) => _then(v as _$_UnderGraduateStudent));
+
+  @override
+  _$_UnderGraduateStudent get _value => super._value as _$_UnderGraduateStudent;
+
+  @override
+  $Res call({
+    Object? indexNumber = freezed,
+    Object? currentGrade = freezed,
+  }) {
+    return _then(_$_UnderGraduateStudent(
+      indexNumber == freezed
+          ? _value.indexNumber
+          : indexNumber // ignore: cast_nullable_to_non_nullable
+              as String,
+      currentGrade == freezed
+          ? _value.currentGrade
+          : currentGrade // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_UnderGraduateStudent implements _UnderGraduateStudent {
+  _$_UnderGraduateStudent(this.indexNumber, this.currentGrade);
+
+  @override
+  final String indexNumber;
+  @override
+  final int currentGrade;
+
+  @override
+  String toString() {
+    return 'Student.underGraduateStudent(indexNumber: $indexNumber, currentGrade: $currentGrade)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_UnderGraduateStudent &&
+            const DeepCollectionEquality()
+                .equals(other.indexNumber, indexNumber) &&
+            const DeepCollectionEquality()
+                .equals(other.currentGrade, currentGrade));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(indexNumber),
+      const DeepCollectionEquality().hash(currentGrade));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_UnderGraduateStudentCopyWith<_$_UnderGraduateStudent> get copyWith =>
+      __$$_UnderGraduateStudentCopyWithImpl<_$_UnderGraduateStudent>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(String indexNumber, int graduationYear)
+        graduateStudent,
+    required TResult Function(String indexNumber, int currentGrade)
+        underGraduateStudent,
+  }) {
+    return underGraduateStudent(indexNumber, currentGrade);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult Function(String indexNumber, int graduationYear)? graduateStudent,
+    TResult Function(String indexNumber, int currentGrade)?
+        underGraduateStudent,
+  }) {
+    return underGraduateStudent?.call(indexNumber, currentGrade);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(String indexNumber, int graduationYear)? graduateStudent,
+    TResult Function(String indexNumber, int currentGrade)?
+        underGraduateStudent,
+    required TResult orElse(),
+  }) {
+    if (underGraduateStudent != null) {
+      return underGraduateStudent(indexNumber, currentGrade);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_GraduateStudent value) graduateStudent,
+    required TResult Function(_UnderGraduateStudent value) underGraduateStudent,
+  }) {
+    return underGraduateStudent(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult Function(_GraduateStudent value)? graduateStudent,
+    TResult Function(_UnderGraduateStudent value)? underGraduateStudent,
+  }) {
+    return underGraduateStudent?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_GraduateStudent value)? graduateStudent,
+    TResult Function(_UnderGraduateStudent value)? underGraduateStudent,
+    required TResult orElse(),
+  }) {
+    if (underGraduateStudent != null) {
+      return underGraduateStudent(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _UnderGraduateStudent implements Student {
+  factory _UnderGraduateStudent(
+          final String indexNumber, final int currentGrade) =
+      _$_UnderGraduateStudent;
+
+  @override
+  String get indexNumber;
+  int get currentGrade;
+  @override
+  @JsonKey(ignore: true)
+  _$$_UnderGraduateStudentCopyWith<_$_UnderGraduateStudent> get copyWith =>
+      throw _privateConstructorUsedError;
+}

@@ -9,3 +9,13 @@ void main() async {
   configureInjection("dev");
   runApp(const MyApp());
 }
+
+trycatch() async {
+  try {
+    // execute some code
+    final result = await callAPI();
+    return result;
+  } catch (e) {}
+}
+
+callAPI() {}
